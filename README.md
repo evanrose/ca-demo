@@ -30,7 +30,7 @@ Copy everything from `<!doctype html>` to `</header>` and add to `header.php`.
 
 1. Create an Options page for the website and add fields to it for logos, a custom menu (optional), office address, email address, social images and links, etc.
 2. Create top-nav menu under Appearance > Menus or build a custom menu.
-3. Create a page called Home, title it home, and add hero content to The Content field, or add this content to the options page.
+3. Create a page called Home, title it Home, and add hero content to The Content field, or add this content to the options page. Echo this content to the page from options like `echo get_field( 'hero_content', 'option' )` or `echo the_content( get_option( 'page_on_front' ) )` for example.
 
 ## ca-2026
 
@@ -71,3 +71,7 @@ In `parts/work.php` take care to alternate the `project-0` and `project-1` class
 ## wp-admin
 
 Create Capability, Company, and Privacy Policy pages and link to them appropriately. They will use the `page.php` by default. To create custom pages for them, create and name theme files like `page-branding-messaging.php`, `page-careers.php`, etc.
+
+## ca-2026 theme
+
+Several elements, the View Case Study link and containing elements, are markup-heavy and repeated in a mobile only and desktop up views. Consider consolidating these into additional template parts so that they can be modified in one place.
