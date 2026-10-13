@@ -56,9 +56,9 @@ Create a `parts` directory and create `team.php`, `work.php`, and `news.php` wit
 
 ## ca-demo/index.html
 
-Copy the entire `sections` to their corresponding `parts` .php files. Write code to accept the arguments from the `get_template_part()` function within `page-home.php`.
+Copy the entire `sections` to their corresponding `parts`.php files. Write code to accept the arguments from the `get_template_part()` function within `page-home.php`.
 
-Copy the `assets` directory to the theme and update paths in the theme `.php`.
+Copy the `assets` directory to the theme and update paths in the theme `.php` files.
 
 **Do not modify files in assets/css**
 
