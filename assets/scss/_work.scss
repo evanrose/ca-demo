@@ -1,0 +1,209 @@
+@use "colors" as *;
+
+.work {
+    background-color: $black;
+    h2 {
+        color: $buttercream;
+    }
+    h3 {
+        color: $marigold;
+    }
+    h4 {
+        color: white;
+    }
+    .csl-container {
+        position: relative;
+        top: -21px;
+        @media screen and (min-width: 992px) {
+            top: -50px;
+            left: 30px;
+            .project-1 {
+                right: 30px;
+            }
+        }
+        .cs-link {
+            font-size: 1rem;
+            line-height: 1rem;
+            color: black;
+            padding: 1rem 0rem;
+            background-color: $marigold;
+            display: inline-block;
+            min-height: 50px;
+            &::after {
+                content: "\F138";
+                font-family: "bootstrap-icons";
+                display: inline-block;
+                margin-left: 0.5rem;
+                vertical-align: middle;
+            }
+        }
+        .slant {
+            display: inline-block;
+            height: 50px;
+            background: $marigold;
+            width: 50px;
+            position: relative;
+            top: 20px;
+        }
+        .slant-left {
+            --p: 75%;
+            clip-path: polygon(var(--p) 0, 100% 0, 100% 100%, 0 100%);
+
+            &.project-0 {
+                display: none;
+                @media screen and (min-width: 992px) {
+                    display: block;
+                }
+            }
+        }
+        .slant-right {
+            --p: 75%;
+            clip-path: polygon(0 0, 100% 0, calc(100% - var(--p)) 100%, 0 100%);
+            &.project-0 {
+                display: none;
+                @media screen and (min-width: 992px) {
+                    display: block;
+                }
+            }
+        }
+    }
+    .pill {
+        display: inline-block;
+        padding: 5px 10px;
+        color: white !important;
+        border: 1px solid white;
+        border-radius: 25px;
+        text-decoration: none;
+    }
+    .image-container {
+        overflow: hidden;
+    }
+    .rollover-container {
+        position: relative;
+        display: inline-block; /* Adjust according to your layout */
+        width: 897px; /* Match your image dimensions */
+        height: 385px;
+        overflow: hidden;
+    }
+    .rollover-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .rollover-container .hover-img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        transition: opacity 0.4s ease-in-out;
+    }
+    .rollover-container:hover .hover-img {
+        opacity: 1;
+    }
+    .project-0 {
+        @media screen and (min-width: 992px) {
+            padding-left: 0 !important;
+        }
+        img {
+            margin-left: -400px;
+            @media screen and (min-width: 576px) {
+                margin-left: -332px;
+            }
+            @media screen and (min-width: 768px) {
+                margin-left: -140px;
+            }
+            @media screen and (min-width: 992px) {
+                margin-left: -240px;
+            }
+            @media screen and (min-width: 1200px) {
+                margin-left: -107px;
+            }
+            @media screen and (min-width: 1400px) {
+                margin-left: 0px;
+            }
+        }
+        .neg-1 {
+            display: block;
+            margin-left: -2rem;
+        }
+        .neg-2 {
+            display: block;
+            margin-left: -4rem;
+        }
+        .neg-3 {
+            display: block;
+            margin-left: -6rem;
+        }
+        .neg-4 {
+            display: block;
+            margin-left: -8rem;
+        }
+        .neg-5 {
+            display: block;
+            margin-left: -10rem;
+        }
+        .slant-left {
+            display: none;
+            @media screen and (min-width: 992px) {
+                display: inline-block;
+            }
+        }
+        .cs-link {
+            padding-left: 1rem;
+            @media screen and (min-width: 992px) {
+                padding-left: 0;
+            }
+        }
+    }
+    .project-1 {
+        @media screen and (min-width: 992px) {
+            padding-right: 0 !important;
+        }
+        text-align: right;
+        &.d-lg-none img {
+            margin-left: 0px;
+        }
+        .net-0 {
+            display: block;
+            margin-right: -10rem;
+        }
+        .neg-1 {
+            display: block;
+            margin-right: -8rem;
+        }
+        .neg-2 {
+            display: block;
+            margin-right: -6rem;
+        }
+        .neg-3 {
+            display: block;
+            margin-right: -4rem;
+        }
+        .neg-4 {
+            display: block;
+            margin-right: -2rem;
+        }
+        .neg-5 {
+            display: block;
+            margin-right: -0rem;
+        }
+        .csl-container {
+            @media screen and (min-width: 992px) {
+                right: 30px;
+                left: auto;
+            }
+            .slant-right {
+                display: none;
+                @media screen and (min-width: 992px) {
+                    display: inline-block;
+                }
+            }
+            .cs-link {
+                padding-right: 1rem;
+                @media screen and (min-width: 992px) {
+                    padding-right: 0;
+                }
+            }
+        }
+    }
+}

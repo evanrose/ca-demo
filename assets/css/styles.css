@@ -1,0 +1,471 @@
+header {
+  background-color: #141414;
+  background-image: url("../images/union.png");
+  background-repeat: no-repeat;
+}
+header .navbar a {
+  color: #feeecc;
+}
+header .navbar .logo {
+  width: 172px;
+  height: 32px;
+}
+@media screen and (min-width: 992px) {
+  header .navbar .logo {
+    width: 265px;
+    height: 50px;
+  }
+}
+header .hero {
+  position: absolute;
+  top: 0;
+}
+header h1 {
+  color: #feeecc;
+  font-family: "Minion 3";
+}
+header h1 i {
+  color: #f39814;
+}
+
+.team {
+  font-size: 1.5rem;
+  background-color: #cdc1b3;
+}
+.team .ca-border-bottom {
+  border-bottom: 8px solid rgba(0, 0, 0, 0.4);
+}
+.team .center-image {
+  margin-top: -54px;
+}
+.team .hr {
+  height: 50%;
+  border-bottom: 3px solid white;
+}
+.team .rounded-left,
+.team .rounded-right {
+  border: 3px solid white;
+}
+.team .tc-container {
+  background-color: #cdc1b3;
+}
+.team h2 {
+  background-color: #cdc1b3;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+@media screen and (min-width: 576px) {
+  .team h2 {
+    height: 100%;
+    padding-top: 5rem;
+    position: relative;
+    left: -3rem;
+    top: -3rem;
+    width: 23rem;
+    padding-left: 0rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .team h2 {
+    top: -3.5rem;
+    left: -4.5rem;
+    width: 24rem;
+    height: 110%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .team h2 {
+    padding-left: 2rem;
+    left: -4rem;
+    top: -3rem;
+    height: 120%;
+    width: 27rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team h2 {
+    padding-left: 2rem;
+    left: -4rem;
+    top: -3rem;
+    height: 120%;
+    width: 31rem;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .team h2 {
+    padding-left: 1.25rem;
+    left: -4rem;
+    top: -3rem;
+    height: 120%;
+    width: 21rem;
+  }
+}
+
+.news {
+  background-color: #cdc1b3;
+}
+
+.prev,
+.next {
+  color: #c7102e;
+  font-size: 2rem;
+}
+.prev:hover,
+.next:hover {
+  cursor: pointer;
+}
+
+.slider div a {
+  display: block;
+  background-color: #cdc1b3;
+  padding: 2rem;
+}
+.slider div a:hover {
+  background-color: #feeecc;
+}
+.slider div img {
+  width: 100%;
+  height: auto;
+}
+.slider div span {
+  display: block;
+  margin-top: 1rem;
+  color: #141414;
+  font-size: auto;
+}
+@media screen and (min-width: 992px) {
+  .slider div span {
+    font-size: 1.25rem;
+  }
+}
+
+.work {
+  background-color: #141414;
+}
+.work h2 {
+  color: #feeecc;
+}
+.work h3 {
+  color: #f39814;
+}
+.work h4 {
+  color: white;
+}
+.work .csl-container {
+  position: relative;
+  top: -21px;
+}
+@media screen and (min-width: 992px) {
+  .work .csl-container {
+    top: -50px;
+    left: 30px;
+  }
+  .work .csl-container .project-1 {
+    right: 30px;
+  }
+}
+.work .csl-container .cs-link {
+  font-size: 1rem;
+  line-height: 1rem;
+  color: black;
+  padding: 1rem 0rem;
+  background-color: #f39814;
+  display: inline-block;
+  min-height: 50px;
+}
+.work .csl-container .cs-link::after {
+  content: "\f138";
+  font-family: "bootstrap-icons";
+  display: inline-block;
+  margin-left: 0.5rem;
+  vertical-align: middle;
+}
+.work .csl-container .slant {
+  display: inline-block;
+  height: 50px;
+  background: #f39814;
+  width: 50px;
+  position: relative;
+  top: 20px;
+}
+.work .csl-container .slant-left {
+  --p: 75%;
+  clip-path: polygon(var(--p) 0, 100% 0, 100% 100%, 0 100%);
+}
+.work .csl-container .slant-left.project-0 {
+  display: none;
+}
+@media screen and (min-width: 992px) {
+  .work .csl-container .slant-left.project-0 {
+    display: block;
+  }
+}
+.work .csl-container .slant-right {
+  --p: 75%;
+  clip-path: polygon(0 0, 100% 0, calc(100% - var(--p)) 100%, 0 100%);
+}
+.work .csl-container .slant-right.project-0 {
+  display: none;
+}
+@media screen and (min-width: 992px) {
+  .work .csl-container .slant-right.project-0 {
+    display: block;
+  }
+}
+.work .pill {
+  display: inline-block;
+  padding: 5px 10px;
+  color: white !important;
+  border: 1px solid white;
+  border-radius: 25px;
+  text-decoration: none;
+}
+.work .image-container {
+  overflow: hidden;
+}
+.work .rollover-container {
+  position: relative;
+  display: inline-block; /* Adjust according to your layout */
+  width: 897px; /* Match your image dimensions */
+  height: 385px;
+  overflow: hidden;
+}
+.work .rollover-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.work .rollover-container .hover-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+.work .rollover-container:hover .hover-img {
+  opacity: 1;
+}
+@media screen and (min-width: 992px) {
+  .work .project-0 {
+    padding-left: 0 !important;
+  }
+}
+.work .project-0 img {
+  margin-left: -400px;
+}
+@media screen and (min-width: 576px) {
+  .work .project-0 img {
+    margin-left: -332px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .work .project-0 img {
+    margin-left: -140px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .work .project-0 img {
+    margin-left: -240px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .work .project-0 img {
+    margin-left: -107px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .work .project-0 img {
+    margin-left: 0px;
+  }
+}
+.work .project-0 .neg-1 {
+  display: block;
+  margin-left: -2rem;
+}
+.work .project-0 .neg-2 {
+  display: block;
+  margin-left: -4rem;
+}
+.work .project-0 .neg-3 {
+  display: block;
+  margin-left: -6rem;
+}
+.work .project-0 .neg-4 {
+  display: block;
+  margin-left: -8rem;
+}
+.work .project-0 .neg-5 {
+  display: block;
+  margin-left: -10rem;
+}
+.work .project-0 .slant-left {
+  display: none;
+}
+@media screen and (min-width: 992px) {
+  .work .project-0 .slant-left {
+    display: inline-block;
+  }
+}
+.work .project-0 .cs-link {
+  padding-left: 1rem;
+}
+@media screen and (min-width: 992px) {
+  .work .project-0 .cs-link {
+    padding-left: 0;
+  }
+}
+.work .project-1 {
+  text-align: right;
+}
+@media screen and (min-width: 992px) {
+  .work .project-1 {
+    padding-right: 0 !important;
+  }
+}
+.work .project-1.d-lg-none img {
+  margin-left: 0px;
+}
+.work .project-1 .net-0 {
+  display: block;
+  margin-right: -10rem;
+}
+.work .project-1 .neg-1 {
+  display: block;
+  margin-right: -8rem;
+}
+.work .project-1 .neg-2 {
+  display: block;
+  margin-right: -6rem;
+}
+.work .project-1 .neg-3 {
+  display: block;
+  margin-right: -4rem;
+}
+.work .project-1 .neg-4 {
+  display: block;
+  margin-right: -2rem;
+}
+.work .project-1 .neg-5 {
+  display: block;
+  margin-right: 0rem;
+}
+@media screen and (min-width: 992px) {
+  .work .project-1 .csl-container {
+    right: 30px;
+    left: auto;
+  }
+}
+.work .project-1 .csl-container .slant-right {
+  display: none;
+}
+@media screen and (min-width: 992px) {
+  .work .project-1 .csl-container .slant-right {
+    display: inline-block;
+  }
+}
+.work .project-1 .csl-container .cs-link {
+  padding-right: 1rem;
+}
+@media screen and (min-width: 992px) {
+  .work .project-1 .csl-container .cs-link {
+    padding-right: 0;
+  }
+}
+
+footer a {
+  color: #141414;
+  display: block;
+}
+footer address,
+footer li {
+  line-height: 1.75rem;
+}
+footer img {
+  height: auto;
+  width: 100%;
+}
+@media screen and (min-width: 576px) {
+  footer img {
+    width: auto;
+  }
+}
+@media screen and (min-width: 992px) {
+  footer img {
+    width: 100%;
+  }
+}
+footer img.social {
+  width: auto;
+}
+footer strong {
+  color: #c7102e;
+}
+footer .copyright {
+  color: gray;
+}
+footer .copyright a {
+  color: gray;
+  display: inline;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2 {
+  font-family: "EB Garamond", serif;
+}
+
+h4 {
+  font-size: 1rem;
+}
+
+.container {
+  max-width: 1600px;
+  overflow: hidden;
+}
+
+.border-black {
+  color: black;
+  border: 1px solid black;
+}
+
+.border-marigold {
+  color: #f39814 !important;
+  border: 1px solid #f39814;
+}
+
+.border-white {
+  color: white !important;
+  border: 1px solid white;
+}
+
+.pill {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+}
+
+.pill-sm {
+  padding: 5px 10px;
+  border-radius: 25px;
+}
+
+/*# sourceMappingURL=styles.css.map */

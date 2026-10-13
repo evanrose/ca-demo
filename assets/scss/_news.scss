@@ -1,0 +1,38 @@
+@use "colors" as *;
+
+.news {
+    background-color: $taupe;
+}
+.prev,
+.next {
+    color: $rubine;
+    font-size: 2rem;
+    &:hover {
+        cursor: pointer;
+    }
+}
+.slider {
+    div {
+        a {
+            display: block;
+            background-color: $taupe;
+            padding: 2rem;
+            &:hover {
+                background-color: $buttercream;
+            }
+        }
+        img {
+            width: 100%;
+            height: auto;
+        }
+        span {
+            display: block;
+            margin-top: 1rem;
+            color: $black;
+            font-size: auto;
+            @media screen and (min-width: 992px) {
+                font-size: 1.25rem;
+            }
+        }
+    }
+}

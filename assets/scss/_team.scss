@@ -1,0 +1,65 @@
+@use "colors" as *;
+
+.team {
+    font-size: 1.5rem;
+    background-color: $taupe;
+    .ca-border-bottom {
+        border-bottom: 8px solid rgba(0, 0, 0, 0.4);
+    }
+    .center-image {
+        margin-top: -54px;
+    }
+    .hr {
+        height: 50%;
+        border-bottom: 3px solid white;
+    }
+    .rounded-left,
+    .rounded-right {
+        border: 3px solid white;
+    }
+    .tc-container {
+        background-color: $taupe;
+    }
+    h2 {
+        background-color: $taupe;
+        font-family: "Poppins", sans-serif;
+        font-size: 1.5rem;
+        line-height: 1.5;
+        @media screen and (min-width: 576px) {
+            height: 100%;
+            padding-top: 5rem;
+            position: relative;
+            left: -3rem;
+            top: -3rem;
+            width: 23rem;
+            padding-left: 0rem;
+        }
+        @media screen and (min-width: 768px) {
+            top: -3.5rem;
+            left: -4.5rem;
+            width: 24rem;
+            height: 110%;
+        }
+        @media screen and (min-width: 992px) {
+            padding-left: 2rem;
+            left: -4rem;
+            top: -3rem;
+            height: 120%;
+            width: 27rem;
+        }
+        @media screen and (min-width: 1200px) {
+            padding-left: 2rem;
+            left: -4rem;
+            top: -3rem;
+            height: 120%;
+            width: 31rem;
+        }
+        @media screen and (min-width: 1400px) {
+            padding-left: 1.25rem;
+            left: -4rem;
+            top: -3rem;
+            height: 120%;
+            width: 21rem;
+        }
+    }
+}

@@ -1,0 +1,35 @@
+@use "colors" as *;
+
+footer {
+    a {
+        color: $black;
+        display: block;
+    }
+    address,
+    li {
+        line-height: 1.75rem;
+    }
+    img {
+        height: auto;
+        width: 100%;
+        @media screen and (min-width: 576px) {
+            width: auto;
+        }
+        @media screen and (min-width: 992px) {
+            width: 100%;
+        }
+        &.social {
+            width: auto;
+        }
+    }
+    strong {
+        color: $rubine;
+    }
+    .copyright {
+        color: gray;
+        a {
+            color: gray;
+            display: inline;
+        }
+    }
+}
