@@ -156,10 +156,10 @@
         }
     }
     .project-1 {
+        text-align: right;
         @media screen and (min-width: 992px) {
             padding-right: 0 !important;
         }
-        text-align: right;
         &.d-lg-none img {
             margin-left: 0px;
         }
