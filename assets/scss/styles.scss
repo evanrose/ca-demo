@@ -32,8 +32,8 @@ h4 {
     overflow: hidden;
 }
 .border-black {
-    color: black;
-    border: 1px solid black;
+    color: $black !important;
+    border: 1px solid $black;
 }
 .border-marigold {
     color: $marigold !important;
