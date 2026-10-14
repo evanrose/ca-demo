@@ -151,66 +151,6 @@ header h1 i {
 .work h4 {
   color: white;
 }
-.work .csl-container {
-  position: relative;
-  top: -21px;
-}
-@media screen and (min-width: 992px) {
-  .work .csl-container {
-    top: -33px;
-    left: 30px;
-  }
-  .work .csl-container .project-1 {
-    right: 30px;
-  }
-}
-.work .csl-container .cs-link {
-  font-size: 1rem;
-  line-height: 1rem;
-  color: #141414;
-  padding: 1rem 0rem;
-  background-color: #f39814;
-  display: inline-block;
-  min-height: 50px;
-  max-height: 50px;
-}
-.work .csl-container .cs-link::after {
-  content: "\f138";
-  font-family: "bootstrap-icons";
-  display: inline-block;
-  margin-left: 0.5rem;
-  vertical-align: middle;
-}
-.work .csl-container .slant {
-  display: inline-block;
-  height: 50px;
-  background: #f39814;
-  width: 50px;
-}
-.work .csl-container .slant-left {
-  --p: 75%;
-  clip-path: polygon(var(--p) 0, 100% 0, 100% 100%, 0 100%);
-}
-.work .csl-container .slant-left.project-0 {
-  display: none;
-}
-@media screen and (min-width: 992px) {
-  .work .csl-container .slant-left.project-0 {
-    display: block;
-  }
-}
-.work .csl-container .slant-right {
-  --p: 75%;
-  clip-path: polygon(0 0, 100% 0, calc(100% - var(--p)) 100%, 0 100%);
-}
-.work .csl-container .slant-right.project-0 {
-  display: none;
-}
-@media screen and (min-width: 992px) {
-  .work .csl-container .slant-right.project-0 {
-    display: block;
-  }
-}
 .work img {
   margin-left: 0;
   width: 100%;
@@ -408,22 +348,86 @@ header h1 i {
     margin-right: -7rem;
   }
 }
-.work .project-1 .csl-container {
-  justify-content: flex-end;
+
+.csl-container {
+  position: relative;
+  top: -21px;
 }
-.work .project-1 .csl-container .slant-right {
+@media screen and (min-width: 992px) {
+  .csl-container {
+    top: -33px;
+    left: 30px;
+  }
+}
+.csl-container .cs-link {
+  font-size: 1rem;
+  line-height: 1rem;
+  color: #141414;
+  padding: 1rem 0rem;
+  background-color: #f39814;
+  display: inline-block;
+  min-height: 50px;
+  max-height: 50px;
+}
+.csl-container .cs-link::after {
+  content: "\f138";
+  font-family: "bootstrap-icons";
+  display: inline-block;
+  margin-left: 0.5rem;
+  vertical-align: middle;
+}
+.csl-container .slant {
+  display: inline-block;
+  height: 50px;
+  background: #f39814;
+  width: 50px;
+}
+.csl-container .slant-left {
+  --p: 75%;
+  clip-path: polygon(var(--p) 0, 100% 0, 100% 100%, 0 100%);
+}
+.csl-container .slant-left.project-0 {
   display: none;
 }
 @media screen and (min-width: 992px) {
-  .work .project-1 .csl-container .slant-right {
+  .csl-container .slant-left.project-0 {
+    display: block;
+  }
+}
+.csl-container .slant-right {
+  --p: 75%;
+  clip-path: polygon(0 0, 100% 0, calc(100% - var(--p)) 100%, 0 100%);
+}
+.csl-container .slant-right.project-0 {
+  display: none;
+}
+@media screen and (min-width: 992px) {
+  .csl-container .slant-right.project-0 {
+    display: block;
+  }
+}
+
+.project-1 .csl-container {
+  justify-content: flex-end;
+}
+@media screen and (min-width: 992px) {
+  .project-1 .csl-container {
+    left: -30px;
+  }
+}
+.project-1 .csl-container .slant-right {
+  display: none;
+}
+@media screen and (min-width: 992px) {
+  .project-1 .csl-container .slant-right {
     display: inline-block;
   }
 }
-.work .project-1 .csl-container .cs-link {
+.project-1 .csl-container .cs-link {
   padding-right: 1rem;
 }
 @media screen and (min-width: 992px) {
-  .work .project-1 .csl-container .cs-link {
+  .project-1 .csl-container .cs-link {
     padding-right: 0;
   }
 }
