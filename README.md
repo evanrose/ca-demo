@@ -16,7 +16,7 @@ Create the files:
 
 ## wp-admin
 
-In the Work post type add the Industry and Work Types (Brand + Website, etc) as taxonomies and populate with content. Add fields for choosing these taxonomies and featured image rollover state. Use Title and Content fields for the project title and case study content. The case study links will link to the project permalink.
+In the Work post type add the Industry and Work Types (Brand + Website, etc) as taxonomies and populate with content. Add fields for choosing these taxonomies, featured image rollover state, mobile image, etc. Use Title and Content fields for the project title and case study content. The case study links will link to the project permalink.
 
 ## ca-2026 theme
 
