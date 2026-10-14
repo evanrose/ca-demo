@@ -8,10 +8,10 @@
         left: 30px;
     }
     .cs-link {
-        font-size: 1rem;
-        line-height: 1rem;
+        font-size: 16px;
+        line-height: 16px;
         color: $black;
-        padding: 1rem 0rem;
+        padding: 16px 0;
         background-color: $marigold;
         display: inline-block;
         min-height: 50px;
@@ -20,7 +20,7 @@
             content: "\F138";
             font-family: "bootstrap-icons";
             display: inline-block;
-            margin-left: 0.5rem;
+            margin-left: 8px;
             vertical-align: middle;
         }
     }
@@ -32,7 +32,7 @@
     }
     .slant-left {
         --p: 75%;
-        clip-path: polygon(var(--p) 0, 100% 0, 100% 100%, 0 100%);
+        clip-path: polygon(var(--p) 0, 101% 0, 100% 100%, 0 100%);
 
         &.project-0 {
             display: none;
@@ -64,7 +64,7 @@
         }
     }
     .cs-link {
-        padding-right: 1rem;
+        padding-right: 16px;
         @media screen and (min-width: 992px) {
             padding-right: 0;
         }
