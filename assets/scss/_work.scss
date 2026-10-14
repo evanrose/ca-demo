@@ -43,8 +43,6 @@
             height: 50px;
             background: $marigold;
             width: 50px;
-            // position: relative;
-            // top: 20px;
         }
         .slant-left {
             --p: 75%;
@@ -115,13 +113,6 @@
         img {
             margin-left: 0;
             width: 100%;
-            // @media screen and (min-width: 576px) {
-            //     margin-left: -332px;
-            //     width: auto;
-            // }
-            // @media screen and (min-width: 768px) {
-            //     margin-left: -140px;
-            // }
             @media screen and (min-width: 992px) {
                 margin-left: -240px;
             }
@@ -182,9 +173,6 @@
         @media screen and (min-width: 992px) {
             padding-right: 0 !important;
         }
-        // &.d-lg-none img {
-        //     margin-left: 0px;
-        // }
         .neg-0 {
             display: block;
             margin-right: -10rem;
@@ -222,10 +210,6 @@
         }
         .csl-container {
             justify-content: flex-end;
-            @media screen and (min-width: 992px) {
-                // right: 30px;
-                // left: auto;
-            }
             .slant-right {
                 display: none;
                 @media screen and (min-width: 992px) {
