@@ -8,7 +8,7 @@ var slider = tns({
     speed: 400,
     nav: false,
     responsive: {
-        350: {
+        0: {
             items: 1,
             controls: false,
             edgePadding: 60,
@@ -19,6 +19,12 @@ var slider = tns({
         },
         992: {
             edgePadding: 240,
+        },
+        1200: {
+            edgePadding: 300,
+        },
+        1400: {
+            edgePadding: 320,
         },
     },
 });

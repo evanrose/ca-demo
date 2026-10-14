@@ -15,7 +15,7 @@
         position: relative;
         top: -21px;
         @media screen and (min-width: 992px) {
-            top: -50px;
+            top: -33px;
             left: 30px;
             .project-1 {
                 right: 30px;
@@ -29,6 +29,7 @@
             background-color: $marigold;
             display: inline-block;
             min-height: 50px;
+            max-height: 50px;
             &::after {
                 content: "\F138";
                 font-family: "bootstrap-icons";
@@ -42,8 +43,8 @@
             height: 50px;
             background: $marigold;
             width: 50px;
-            position: relative;
-            top: 20px;
+            // position: relative;
+            // top: 20px;
         }
         .slant-left {
             --p: 75%;
@@ -75,6 +76,13 @@
         border-radius: 25px;
         text-decoration: none;
     }
+    img {
+        margin-left: 0;
+        width: 100%;
+        @media screen and (min-width: 992px) {
+            width: auto;
+        }
+    }
     .image-container {
         overflow: hidden;
     }
@@ -105,42 +113,56 @@
             padding-left: 0 !important;
         }
         img {
-            margin-left: -400px;
-            @media screen and (min-width: 576px) {
-                margin-left: -332px;
-            }
-            @media screen and (min-width: 768px) {
-                margin-left: -140px;
-            }
+            margin-left: 0;
+            width: 100%;
+            // @media screen and (min-width: 576px) {
+            //     margin-left: -332px;
+            //     width: auto;
+            // }
+            // @media screen and (min-width: 768px) {
+            //     margin-left: -140px;
+            // }
             @media screen and (min-width: 992px) {
                 margin-left: -240px;
             }
             @media screen and (min-width: 1200px) {
-                margin-left: -107px;
+                margin-left: 0;
             }
+        }
+        .neg-0 {
+            display: block;
+            margin-left: 0;
             @media screen and (min-width: 1400px) {
-                margin-left: 0px;
+                margin-left: -5rem;
             }
         }
         .neg-1 {
             display: block;
             margin-left: -2rem;
+            @media screen and (min-width: 1400px) {
+                margin-left: -7rem;
+            }
         }
         .neg-2 {
             display: block;
             margin-left: -4rem;
+            @media screen and (min-width: 1400px) {
+                margin-left: -9rem;
+            }
         }
         .neg-3 {
             display: block;
             margin-left: -6rem;
+            @media screen and (min-width: 1400px) {
+                margin-left: -11rem;
+            }
         }
         .neg-4 {
             display: block;
             margin-left: -8rem;
-        }
-        .neg-5 {
-            display: block;
-            margin-left: -10rem;
+            @media screen and (min-width: 1400px) {
+                margin-left: -13rem;
+            }
         }
         .slant-left {
             display: none;
@@ -156,41 +178,53 @@
         }
     }
     .project-1 {
+        text-align: right;
         @media screen and (min-width: 992px) {
             padding-right: 0 !important;
         }
-        text-align: right;
-        &.d-lg-none img {
-            margin-left: 0px;
-        }
-        .net-0 {
+        // &.d-lg-none img {
+        //     margin-left: 0px;
+        // }
+        .neg-0 {
             display: block;
             margin-right: -10rem;
+            @media screen and (min-width: 1400px) {
+                margin-right: -15rem;
+            }
         }
         .neg-1 {
             display: block;
             margin-right: -8rem;
+            @media screen and (min-width: 1400px) {
+                margin-right: -13rem;
+            }
         }
         .neg-2 {
             display: block;
             margin-right: -6rem;
+            @media screen and (min-width: 1400px) {
+                margin-right: -11rem;
+            }
         }
         .neg-3 {
             display: block;
             margin-right: -4rem;
+            @media screen and (min-width: 1400px) {
+                margin-right: -9rem;
+            }
         }
         .neg-4 {
             display: block;
             margin-right: -2rem;
-        }
-        .neg-5 {
-            display: block;
-            margin-right: -0rem;
+            @media screen and (min-width: 1400px) {
+                margin-right: -7rem;
+            }
         }
         .csl-container {
+            justify-content: flex-end;
             @media screen and (min-width: 992px) {
-                right: 30px;
-                left: auto;
+                // right: 30px;
+                // left: auto;
             }
             .slant-right {
                 display: none;
