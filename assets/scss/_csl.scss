@@ -1,0 +1,72 @@
+@use "colors" as *;
+
+.csl-container {
+    position: relative;
+    top: -21px;
+    @media screen and (min-width: 992px) {
+        top: -33px;
+        left: 30px;
+    }
+    .cs-link {
+        font-size: 1rem;
+        line-height: 1rem;
+        color: $black;
+        padding: 1rem 0rem;
+        background-color: $marigold;
+        display: inline-block;
+        min-height: 50px;
+        max-height: 50px;
+        &::after {
+            content: "\F138";
+            font-family: "bootstrap-icons";
+            display: inline-block;
+            margin-left: 0.5rem;
+            vertical-align: middle;
+        }
+    }
+    .slant {
+        display: inline-block;
+        height: 50px;
+        background: $marigold;
+        width: 50px;
+    }
+    .slant-left {
+        --p: 75%;
+        clip-path: polygon(var(--p) 0, 100% 0, 100% 100%, 0 100%);
+
+        &.project-0 {
+            display: none;
+            @media screen and (min-width: 992px) {
+                display: block;
+            }
+        }
+    }
+    .slant-right {
+        --p: 75%;
+        clip-path: polygon(0 0, 100% 0, calc(100% - var(--p)) 100%, 0 100%);
+        &.project-0 {
+            display: none;
+            @media screen and (min-width: 992px) {
+                display: block;
+            }
+        }
+    }
+}
+.project-1 .csl-container {
+    justify-content: flex-end;
+    @media screen and (min-width: 992px) {
+        left: -30px;
+    }
+    .slant-right {
+        display: none;
+        @media screen and (min-width: 992px) {
+            display: inline-block;
+        }
+    }
+    .cs-link {
+        padding-right: 1rem;
+        @media screen and (min-width: 992px) {
+            padding-right: 0;
+        }
+    }
+}
