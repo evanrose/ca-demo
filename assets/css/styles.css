@@ -22,7 +22,6 @@ header .hero {
 }
 header h1 {
   color: #feeecc;
-  font-family: "Minion 3";
 }
 header h1 i {
   color: #f39814;
@@ -168,7 +167,7 @@ header h1 i {
 .work .csl-container .cs-link {
   font-size: 1rem;
   line-height: 1rem;
-  color: black;
+  color: #141414;
   padding: 1rem 0rem;
   background-color: #f39814;
   display: inline-block;
@@ -211,14 +210,6 @@ header h1 i {
   .work .csl-container .slant-right.project-0 {
     display: block;
   }
-}
-.work .pill {
-  display: inline-block;
-  padding: 5px 10px;
-  color: white !important;
-  border: 1px solid white;
-  border-radius: 25px;
-  text-decoration: none;
 }
 .work img {
   margin-left: 0;
@@ -476,8 +467,8 @@ h4 {
 }
 
 .border-black {
-  color: black;
-  border: 1px solid black;
+  color: #141414 !important;
+  border: 1px solid #141414;
 }
 
 .border-marigold {
