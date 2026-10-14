@@ -157,7 +157,7 @@ header h1 i {
 }
 @media screen and (min-width: 992px) {
   .work .csl-container {
-    top: -50px;
+    top: -33px;
     left: 30px;
   }
   .work .csl-container .project-1 {
@@ -172,6 +172,7 @@ header h1 i {
   background-color: #f39814;
   display: inline-block;
   min-height: 50px;
+  max-height: 50px;
 }
 .work .csl-container .cs-link::after {
   content: "\f138";
@@ -185,8 +186,6 @@ header h1 i {
   height: 50px;
   background: #f39814;
   width: 50px;
-  position: relative;
-  top: 20px;
 }
 .work .csl-container .slant-left {
   --p: 75%;
@@ -220,6 +219,15 @@ header h1 i {
   border-radius: 25px;
   text-decoration: none;
 }
+.work img {
+  margin-left: 0;
+  width: 100%;
+}
+@media screen and (min-width: 992px) {
+  .work img {
+    width: auto;
+  }
+}
 .work .image-container {
   overflow: hidden;
 }
@@ -251,17 +259,8 @@ header h1 i {
   }
 }
 .work .project-0 img {
-  margin-left: -400px;
-}
-@media screen and (min-width: 576px) {
-  .work .project-0 img {
-    margin-left: -332px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .work .project-0 img {
-    margin-left: -140px;
-  }
+  margin-left: 0;
+  width: 100%;
 }
 @media screen and (min-width: 992px) {
   .work .project-0 img {
@@ -270,33 +269,53 @@ header h1 i {
 }
 @media screen and (min-width: 1200px) {
   .work .project-0 img {
-    margin-left: -107px;
+    margin-left: 0;
   }
 }
+.work .project-0 .neg-0 {
+  display: block;
+  margin-left: 0;
+}
 @media screen and (min-width: 1400px) {
-  .work .project-0 img {
-    margin-left: 0px;
+  .work .project-0 .neg-0 {
+    margin-left: -5rem;
   }
 }
 .work .project-0 .neg-1 {
   display: block;
   margin-left: -2rem;
 }
+@media screen and (min-width: 1400px) {
+  .work .project-0 .neg-1 {
+    margin-left: -7rem;
+  }
+}
 .work .project-0 .neg-2 {
   display: block;
   margin-left: -4rem;
+}
+@media screen and (min-width: 1400px) {
+  .work .project-0 .neg-2 {
+    margin-left: -9rem;
+  }
 }
 .work .project-0 .neg-3 {
   display: block;
   margin-left: -6rem;
 }
+@media screen and (min-width: 1400px) {
+  .work .project-0 .neg-3 {
+    margin-left: -11rem;
+  }
+}
 .work .project-0 .neg-4 {
   display: block;
   margin-left: -8rem;
 }
-.work .project-0 .neg-5 {
-  display: block;
-  margin-left: -10rem;
+@media screen and (min-width: 1400px) {
+  .work .project-0 .neg-4 {
+    margin-left: -13rem;
+  }
 }
 .work .project-0 .slant-left {
   display: none;
@@ -322,38 +341,53 @@ header h1 i {
     padding-right: 0 !important;
   }
 }
-.work .project-1.d-lg-none img {
-  margin-left: 0px;
-}
-.work .project-1 .net-0 {
+.work .project-1 .neg-0 {
   display: block;
   margin-right: -10rem;
+}
+@media screen and (min-width: 1400px) {
+  .work .project-1 .neg-0 {
+    margin-right: -15rem;
+  }
 }
 .work .project-1 .neg-1 {
   display: block;
   margin-right: -8rem;
 }
+@media screen and (min-width: 1400px) {
+  .work .project-1 .neg-1 {
+    margin-right: -13rem;
+  }
+}
 .work .project-1 .neg-2 {
   display: block;
   margin-right: -6rem;
+}
+@media screen and (min-width: 1400px) {
+  .work .project-1 .neg-2 {
+    margin-right: -11rem;
+  }
 }
 .work .project-1 .neg-3 {
   display: block;
   margin-right: -4rem;
 }
+@media screen and (min-width: 1400px) {
+  .work .project-1 .neg-3 {
+    margin-right: -9rem;
+  }
+}
 .work .project-1 .neg-4 {
   display: block;
   margin-right: -2rem;
 }
-.work .project-1 .neg-5 {
-  display: block;
-  margin-right: 0rem;
-}
-@media screen and (min-width: 992px) {
-  .work .project-1 .csl-container {
-    right: 30px;
-    left: auto;
+@media screen and (min-width: 1400px) {
+  .work .project-1 .neg-4 {
+    margin-right: -7rem;
   }
+}
+.work .project-1 .csl-container {
+  justify-content: flex-end;
 }
 .work .project-1 .csl-container .slant-right {
   display: none;
