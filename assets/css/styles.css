@@ -6,6 +6,9 @@ header {
 header .navbar a {
   color: #feeecc;
 }
+header .navbar a:hover {
+  color: #f39814;
+}
 header .navbar .logo {
   width: 172px;
   height: 32px;
