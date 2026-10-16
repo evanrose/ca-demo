@@ -7,6 +7,9 @@ header {
     .navbar {
         a {
             color: $buttercream;
+            &:hover {
+                color: $marigold;
+            }
         }
         .logo {
             width: 172px;
